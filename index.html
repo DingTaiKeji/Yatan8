@@ -14,18 +14,16 @@
         <div id="nav">
             <ul class="navbar fl">
                 <li><a href="/">首页</a></li>
-                <!--         <li><a title="看看江安有哪些好工作" href="/job.html">找工作</a></li> -->
+                <li><a title="进入找工作页面" href="/job.html">找工作</a></li>
             </ul>
             <ul class="navbar fr">
-
-                <!--         <li><a href="/account/user">我的账号</a></li> -->
+                <li><a href="/account/user">我的账号</a></li>
                 <li><a href="/account/logout">退出</a></li>
             </ul>
             <div class="clear"></div>
         </div><!-- /.navbar-collapse -->
 
-
-        <div class="sidebar">
+        <!--<div class="sidebar">
             <div class="oi">
                 <ul class="navbar-v">
                     <li class="youarehere">
@@ -37,304 +35,308 @@
 
                 </ul>
             </div>
-        </div>
+        </div>-->
 
-        <div class="content">
+        <div class="caption">Yatan8官方招聘</div>
 
-            <div class="caption">Yatan8官方招聘</div>
+        <div class="oi">
+            <form id="id-qiniu-form" role="form" method="post">
+                <table class="detail-table">
+                    <tbody>
+                        <tr>
+                            <td class="label"><div>姓名</div></td>
+                            <td class="value"><div class="value"><input id="id_xm" maxlength="10" name="xm" type="text"></div></td>
+                            <td class="label"><div>性别</div></td>
+                            <td class="value">
+                                <div class="value">
+                                    <select name="sex" id="id_sex">
+                                        <option value="">---------</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="label"><div>民族</div></td>
+                            <td class="value"><div class="value" style="width: 159px;"><input id="id_mz" maxlength="5" name="mz" type="text"></div></td>
+                            <td class="info" rowspan="5">
+                                <div class="tx">
+                                    <input type="hidden" name="tx" id="id_tx">
+                                    <img class="qiniu_dynamic" src="">
+                                    <input type="file" name="qiniu-avatar" id="qiniu-avatar" style="display: none;">
+                                    <div class="button qiniu-fake-upload">上传头像</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>出生年月</div></td>
+                            <td class="value"><div class="value"> <input id="id_csny" name="csny" type="text"></div></td>
+                            <td class="label"><div>政治面貌</div></td>
+                            <td class="value">
+                                <div class="value">
+                                    <select name="zzmm" id="id_zzmm">
+                                        <option value="">---------</option>
+                                        <option value="群众">群众</option>
+                                        <option value="共青团员">共青团员</option>
+                                        <option value="中共党员">中共党员</option>
+                                        <option value="中共预备党员">中共预备党员</option>
+                                        <option value="无党派民主人士">无党派民主人士</option>
+                                        <option value="民革党员">民革党员</option>
+                                        <option value="民盟盟员">民盟盟员</option>
+                                        <option value="民建会员">民建会员</option>
+                                        <option value="民进会员">民进会员</option>
+                                        <option value="农工党党员">农工党党员</option>
+                                        <option value="致公党党员">致公党党员</option>
+                                        <option value="九三学社社员">九三学社社员</option>
+                                        <option value="台盟盟员">台盟盟员</option>
+                                        <option value="其他">其他</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="label"><div>婚姻状态</div></td>
+                            <td class="value">
+                                <div class="value" style="width: 159px;">
+                                    <select name="hyzt" id="id_hyzt">
+                                        <option value="">---------</option>
+                                        <option value="未婚">未婚</option>
+                                        <option value="已婚">已婚</option>
+                                        <option value="离异">离异</option>
+                                        <option value="丧偶">丧偶</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>学历类别</div></td>
+                            <td class="value">
+                                <div class="value">
+                                    <select name="xllb" id="id_xllb">
+                                        <option value="">---------</option>
+                                        <option value="全日制">全日制</option>
+                                        <option value="非全日制">非全日制</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="label"><div>学历</div></td>
+                            <td class="value">
+                                <div class="value">
+                                    <select name="xl" id="id_xl">
+                                        <option value="">---------</option>
+                                        <option value="大专">大专</option>
+                                        <option value="中专">中专</option>
+                                        <option value="中技">中技</option>
+                                        <option value="本科">本科</option>
+                                        <option value="硕士研究生">硕士研究生</option>
+                                        <option value="博士研究生">博士研究生</option>
+                                        <option value="高中">高中</option>
+                                        <option value="初中">初中</option>
+                                        <option value="其他">其他</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="label"><div>学位</div></td>
+                            <td class="value">
+                                <div class="value" style="width: 159px;">
+                                    <select name="xw" id="id_xw">
+                                        <option value="" selected="selected">---------</option>
+                                        <option value="学士">学士</option>
+                                        <option value="硕士">硕士</option>
+                                        <option value="博士">博士</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>毕业时间</div></td>
+                            <td class="value"><div class="value"><input type="text" name="bysj" id="id_bysj"></div></td>
+                            <td class="label"><div>毕业院校</div></td>
+                            <td class="value"><div class="value"><input id="id_byyx" maxlength="50" name="byyx" type="text"></div></td>
+                            <td class="label"><div>专业</div></td>
+                            <td class="value"><div><input id="id_zy" maxlength="50" name="zy" type="text"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>联系电话</div></td>
+                            <td class="value"><div class="value"><input id="id_phone" maxlength="11" name="phone" type="text"></div></td>
+                            <td class="label"><div>电子邮箱</div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input id="id_dzyx" maxlength="50" name="dzyx" type="text"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>考生身份</div></td>
+                            <td class="value" colspan="2">
+                                <div class="value" style="width: 203px;">
+                                    <select name="kssf" id="id_kssf">
+                                        <option value="其他">其他</option>
+                                        <option value="公务员">公务员</option>
+                                        <option value="参公人员">参公人员</option>
+                                        <option value="事业编制人员">事业编制人员</option>
+                                        <option value="应届毕业生">应届毕业生</option>
+                                        <option value="待业">待业</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="label"><div>报考岗位</div></td>
+                            <td class="value" colspan="3">
+                                <div class="value" style="width: 357px;">
+                                    <select name="bkgw" id="id_bkgw">
+                                        <option value="总经理">总经理</option>
+                                        <option value="董事长">董事长</option>
+                                        <option value="财务经理">财务经理</option>
+                                        <option value="软件工程师">软件工程师</option>
+                                        <option value="人事经理">人事经理</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>参加工作时间</div></td>
+                            <td class="value" colspan="2"><div><input type="text" name="cjgzsj" id="id_cjgzsj"></div></td>
+                            <td class="label"><div>现工作单位及岗位</div></td>
+                            <td class="value" colspan="3"><div><input id="id_xgzdwjgw" maxlength="50" name="xgzdwjgw" type="text"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><div>户籍信息</div></td>
+                            <td class="value" colspan="6"><div><input id="id_hjszd" maxlength="50" name="hjszd" type="text"></div></td>
 
-            <div class="oi">
-                <form id="id-qiniu-form" role="form" method="post">
-                    <table class="detail-table">
-                        <tbody>
-                            <tr>
-                                <td class="label"><div>姓名</div></td>
-                                <td class="value"><div class="value"><input id="id_xm" maxlength="10" name="xm" type="text"></div></td>
-                                <td class="label"><div>性别</div></td>
-                                <td class="info"><div class="info" style="width: 102px;">男</div></td>
-                                <td class="label"><div>民族</div></td>
-                                <td class="value"><div class="value" style="width: 159px;"><input id="id_mz" maxlength="5" name="mz" type="text"></div></td>
-                                <td class="info" rowspan="5">
-                                    <div class="tx">
-                                        <input type="hidden" name="tx" id="id_tx">
-                                        <img class="qiniu_dynamic" src="">
-                                        <input type="file" name="qiniu-avatar" id="qiniu-avatar" style="display: none;">
-                                        <div class="button qiniu-fake-upload">上传头像</div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>出生年月</div></td>
-                                <td class="info"><div class="info" style="width: 102px;">1990-04</div></td>
-                                <td class="label"><div>政治面貌</div></td>
-                                <td class="value">
-                                    <div class="value">
-                                        <select name="zzmm" id="id_zzmm">
-                                            <option value="">---------</option>
-                                            <option value="群众">群众</option>
-                                            <option value="共青团员">共青团员</option>
-                                            <option value="中共党员">中共党员</option>
-                                            <option value="中共预备党员">中共预备党员</option>
-                                            <option value="无党派民主人士">无党派民主人士</option>
-                                            <option value="民革党员">民革党员</option>
-                                            <option value="民盟盟员">民盟盟员</option>
-                                            <option value="民建会员">民建会员</option>
-                                            <option value="民进会员">民进会员</option>
-                                            <option value="农工党党员">农工党党员</option>
-                                            <option value="致公党党员">致公党党员</option>
-                                            <option value="九三学社社员">九三学社社员</option>
-                                            <option value="台盟盟员">台盟盟员</option>
-                                            <option value="其他">其他</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td class="label"><div>婚姻状态</div></td>
-                                <td class="value">
-                                    <div class="value" style="width: 159px;">
-                                        <select name="hyzt" id="id_hyzt">
-                                            <option value="">---------</option>
-                                            <option value="未婚">未婚</option>
-                                            <option value="已婚">已婚</option>
-                                            <option value="离异">离异</option>
-                                            <option value="丧偶">丧偶</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>学历类别</div></td>
-                                <td class="value">
-                                    <div class="value">
-                                        <select name="xllb" id="id_xllb">
-                                            <option value="">---------</option>
-                                            <option value="全日制">全日制</option>
-                                            <option value="非全日制">非全日制</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td class="label"><div>学历</div></td>
-                                <td class="value">
-                                    <div class="value">
-                                        <select name="xl" id="id_xl">
-                                            <option value="">---------</option>
-                                            <option value="大专">大专</option>
-                                            <option value="中专">中专</option>
-                                            <option value="中技">中技</option>
-                                            <option value="本科">本科</option>
-                                            <option value="硕士研究生">硕士研究生</option>
-                                            <option value="博士研究生">博士研究生</option>
-                                            <option value="高中">高中</option>
-                                            <option value="初中">初中</option>
-                                            <option value="其他">其他</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td class="label"><div>学位</div></td>
-                                <td class="value">
-                                    <div class="value" style="width: 159px;">
-                                        <select name="xw" id="id_xw">
-                                            <option value="" selected="selected">---------</option>
-                                            <option value="学士">学士</option>
-                                            <option value="硕士">硕士</option>
-                                            <option value="博士">博士</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>毕业时间</div></td>
-                                <td class="value"><div class="value"><input type="text" name="bysj" id="id_bysj"></div></td>
-                                <td class="label"><div>毕业院校</div></td>
-                                <td class="value"><div class="value"><input id="id_byyx" maxlength="50" name="byyx" type="text"></div></td>
-                                <td class="label"><div>专业</div></td>
-                                <td class="value"><div><input id="id_zy" maxlength="50" name="zy" type="text"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>联系电话</div></td>
-                                <td class="info" colspan="2"><div class="info" style="width: 205px;">18180176246</div></td>
-                                <td class="label"><div>电子邮箱</div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input id="id_dzyx" maxlength="50" name="dzyx" type="text"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>考生身份</div></td>
-                                <td class="value" colspan="2">
-                                    <div class="value" style="width: 203px;">
-                                        <select name="kssf" id="id_kssf">
-                                            <option value="其他">其他</option>
-                                            <option value="公务员">公务员</option>
-                                            <option value="参公人员">参公人员</option>
-                                            <option value="事业编制人员">事业编制人员</option>
-                                            <option value="应届毕业生">应届毕业生</option>
-                                            <option value="待业">待业</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td class="label"><div>报考岗位</div></td>
-                                <td class="value" colspan="3">
-                                    <div class="value" style="width: 357px;">
-                                        <select name="bkgw" id="id_bkgw">
-                                            <option value="江安县城市建设投资有限责任公司工作员一">江安县城市建设投资有限责任公司工作员一</option>
-                                            <option value="江安县城市建设投资有限责任公司工作员二">江安县城市建设投资有限责任公司工作员二</option>
-                                            <option value="江安县城市建设投资有限责任公司工作员三">江安县城市建设投资有限责任公司工作员三</option>
-                                            <option value="社区协理员工作员">社区协理员工作员</option>
-                                            <option value="大学生协理员工作员">大学生协理员工作员</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>参加工作时间</div></td>
-                                <td class="value" colspan="2"><div><input type="text" name="cjgzsj" id="id_cjgzsj"></div></td>
-                                <td class="label"><div>现工作单位及岗位</div></td>
-                                <td class="value" colspan="3"><div><input id="id_xgzdwjgw" maxlength="50" name="xgzdwjgw" type="text"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="label"><div>户籍信息</div></td>
-                                <td class="value" colspan="6"><div><input id="id_hjszd" maxlength="50" name="hjszd" type="text"></div></td>
-
-                            </tr>
+                        </tr>
 
 
-                            <tr>
-                                <td class="label"><div>家庭住址</div></td>
-                                <td class="value" colspan="6"><div><input id="id_jtzz" maxlength="50" name="jtzz" type="text"></div></td>
-                            </tr>
+                        <tr>
+                            <td class="label"><div>家庭住址</div></td>
+                            <td class="value" colspan="6"><div><input id="id_jtzz" maxlength="50" name="jtzz" type="text"></div></td>
+                        </tr>
 
 
 
-                            <tr>
-                                <td class="label"><div>证书职称<br>信息</div></td>
-                                <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="300" name="zszcxx" id="id_zszcxx"></textarea></div></td>
-                            </tr>
+                        <tr>
+                            <td class="label"><div>证书职称<br>信息</div></td>
+                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="300" name="zszcxx" id="id_zszcxx"></textarea></div></td>
+                        </tr>
 
-                            <tr>
-                                <td class="label" rowspan="7">
-                                    <div id="id_grjl">
+                        <tr>
+                            <td class="label" rowspan="7">
+                                <div id="id_grjl">
 
-                                        个人简历
-                                        <div class="add_row button">增加</div>
-                                    </div>
-                                </td>
-                                <td class="label"><div>开始年月</div></td>
-                                <td class="label"><div>结束年月</div></td>
-                                <td class="label" colspan="4"><div>详情</div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_1"></div></td>
-                                <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_1" id="id_grjl_1_3"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_2" id="id_grjl_2_3"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_3" id="id_grjl_3_3"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_4" id="id_grjl_4_3"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_5" id="id_grjl_5_3"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_2"></div></td>
-                                <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_6" id="id_grjl_6_3"></div></td>
-                            </tr>
+                                    个人简历
+                                    <div class="add_row button">增加</div>
+                                </div>
+                            </td>
+                            <td class="label"><div>开始年月</div></td>
+                            <td class="label"><div>结束年月</div></td>
+                            <td class="label" colspan="4"><div>详情</div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_1"></div></td>
+                            <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_1" id="id_grjl_1_3"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_2" id="id_grjl_2_3"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_3" id="id_grjl_3_3"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_4" id="id_grjl_4_3"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_5" id="id_grjl_5_3"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_2"></div></td>
+                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_6" id="id_grjl_6_3"></div></td>
+                        </tr>
 
-                            <tr>
-                                <td class="label" rowspan="9">
-                                    <div id="id_jtzycyqk">
+                        <tr>
+                            <td class="label" rowspan="9">
+                                <div id="id_jtzycyqk">
+                                    家庭主要<br>成员情况<div class="add_row button">增加</div>
+                                </div>
+                            </td>
+                            <td class="label"><div>姓名</div></td>
+                            <td class="label"><div>称谓</div></td>
+                            <td class="label"><div>年龄</div></td>
+                            <td class="label" colspan="2"><div>工作单位</div></td>
+                            <td class="label"><div>职务</div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_1" id="id_jtzycyqk_1_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_1" id="id_jtzycyqk_1_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_1_3" type="number" min="1" name="jtzycyqk_1"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_1" id="id_jtzycyqk_1_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_1" id="id_jtzycyqk_1_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_2" id="id_jtzycyqk_2_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_2" id="id_jtzycyqk_2_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_2_3" type="number" min="1" name="jtzycyqk_2"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_2" id="id_jtzycyqk_2_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_2" id="id_jtzycyqk_2_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_3" id="id_jtzycyqk_3_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_3" id="id_jtzycyqk_3_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_3_3" type="number" min="1" name="jtzycyqk_3"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_3" id="id_jtzycyqk_3_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_3" id="id_jtzycyqk_3_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_4" id="id_jtzycyqk_4_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_4" id="id_jtzycyqk_4_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_4_3" type="number" min="1" name="jtzycyqk_4"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_4" id="id_jtzycyqk_4_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_4" id="id_jtzycyqk_4_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_5" id="id_jtzycyqk_5_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_5" id="id_jtzycyqk_5_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_5_3" type="number" min="1" name="jtzycyqk_5"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_5" id="id_jtzycyqk_5_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_5" id="id_jtzycyqk_5_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_6" id="id_jtzycyqk_6_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_6" id="id_jtzycyqk_6_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_6_3" type="number" min="1" name="jtzycyqk_6"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_6" id="id_jtzycyqk_6_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_6" id="id_jtzycyqk_6_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_7" id="id_jtzycyqk_7_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_7" id="id_jtzycyqk_7_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_7_3" type="number" min="1" name="jtzycyqk_7"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_7" id="id_jtzycyqk_7_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_7" id="id_jtzycyqk_7_5"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_8" id="id_jtzycyqk_8_1"></div></td>
+                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_8" id="id_jtzycyqk_8_2"></div></td>
+                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_8_3" type="number" min="1" name="jtzycyqk_8"></div></td>
+                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_8" id="id_jtzycyqk_8_4"></div></td>
+                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_8" id="id_jtzycyqk_8_5"></div></td>
+                        </tr>
 
-                                        家庭主要<br>成员情况<div class="add_row button">增加</div>
-                                    </div>
-                                </td>
-                                <td class="label"><div>姓名</div></td>
-                                <td class="label"><div>称谓</div></td>
-                                <td class="label"><div>年龄</div></td>
-                                <td class="label" colspan="2"><div>工作单位</div></td>
-                                <td class="label"><div>职务</div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_1" id="id_jtzycyqk_1_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_1" id="id_jtzycyqk_1_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_1_3" type="number" min="1" name="jtzycyqk_1"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_1" id="id_jtzycyqk_1_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_1" id="id_jtzycyqk_1_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_2" id="id_jtzycyqk_2_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_2" id="id_jtzycyqk_2_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_2_3" type="number" min="1" name="jtzycyqk_2"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_2" id="id_jtzycyqk_2_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_2" id="id_jtzycyqk_2_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_3" id="id_jtzycyqk_3_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_3" id="id_jtzycyqk_3_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_3_3" type="number" min="1" name="jtzycyqk_3"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_3" id="id_jtzycyqk_3_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_3" id="id_jtzycyqk_3_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_4" id="id_jtzycyqk_4_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_4" id="id_jtzycyqk_4_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_4_3" type="number" min="1" name="jtzycyqk_4"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_4" id="id_jtzycyqk_4_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_4" id="id_jtzycyqk_4_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_5" id="id_jtzycyqk_5_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_5" id="id_jtzycyqk_5_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_5_3" type="number" min="1" name="jtzycyqk_5"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_5" id="id_jtzycyqk_5_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_5" id="id_jtzycyqk_5_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_6" id="id_jtzycyqk_6_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_6" id="id_jtzycyqk_6_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_6_3" type="number" min="1" name="jtzycyqk_6"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_6" id="id_jtzycyqk_6_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_6" id="id_jtzycyqk_6_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_7" id="id_jtzycyqk_7_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_7" id="id_jtzycyqk_7_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_7_3" type="number" min="1" name="jtzycyqk_7"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_7" id="id_jtzycyqk_7_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_7" id="id_jtzycyqk_7_5"></div></td>
-                            </tr>
-                            <tr>
-                                <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_8" id="id_jtzycyqk_8_1"></div></td>
-                                <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_8" id="id_jtzycyqk_8_2"></div></td>
-                                <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_8_3" type="number" min="1" name="jtzycyqk_8"></div></td>
-                                <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_8" id="id_jtzycyqk_8_4"></div></td>
-                                <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_8" id="id_jtzycyqk_8_5"></div></td>
-                            </tr>
+                        <tr>
+                            <td class="label"><div>奖惩情况</div></td>
+                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="jcqk" id="id_jcqk"></textarea></div></td>
+                        </tr>
 
-                            <tr>
-                                <td class="label"><div>奖惩情况</div></td>
-                                <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="jcqk" id="id_jcqk"></textarea></div></td>
-                            </tr>
+                        <tr>
+                            <td class="label"><div>备注</div></td>
+                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="bz" id="id_bz"></textarea></div></td>
+                        </tr>
 
-                            <tr>
-                                <td class="label"><div>备注</div></td>
-                                <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="bz" id="id_bz"></textarea></div></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <button type="submit" style="display:block;width:8em">提交</button>
-                </form>
-            </div>
+                    </tbody>
+                </table>
+                <button type="submit" style="display:block;width:8em">提交</button>
+            </form>
         </div>
 
         <div class="clear"></div>
@@ -342,24 +344,17 @@
             网站备案号：蜀ICP备13027888号-1
         </div>
     </div>
+
+
     <script type="text/javascript" src="http://mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js"></script>
-
-
     <script type="text/javascript" src="jarsj.28a8938cd0c9195ba405.js"></script>
 
 
     <script>
   $(document).ready(function(){
-
+      //打印区域
   })
     </script>
-    <!-- <![endif]-->
-    <!--[if IE]>
-    <h1 style="margin:20px 0;text-align:center;">
-      本网站不支持IE浏览器， 请使用其他浏览器（如
-      <a href="https://www.baidu.com/link?url=4h-amh5Z8FCUSer4VlUMWJIqUHqrH8ON9nphOHvEK29DXKnTCVb3tvLiGaEHArss73cHS56RLCre3SpZ4IbeusB7uYDsx-E-v5NadLTu2R3&wd=&eqid=e95335270000042c000000025849559f">谷歌浏览器</a>）
-    </h1>
-    <![endif]-->
-    <div class="_bd_ext_tip _bd_ext_search_mode" style="visibility: hidden; left: 758px; top: 1160px;"><span class="_bd_ext_search">百度一下</span><span class="_bd_ext_open">打开链接</span><span class="_bd_ext_copy">复制</span></div>
+    //<div class="_bd_ext_tip _bd_ext_search_mode" style="visibility: hidden; left: 758px; top: 1160px;"><span class="_bd_ext_search">百度一下</span><span class="_bd_ext_open">打开链接</span><span class="_bd_ext_copy">复制</span></div>
 </body>
 </html>
