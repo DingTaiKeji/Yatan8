@@ -1,357 +1,322 @@
-﻿<!DOCTYPE html>
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-        <meta name="renderer" content="webkit">
-        <link rel="stylesheet" type="text/css" href="jarsj.28a8938cd0c9195ba405.css">
-        <title></title>
-        <script type="text/javascript" charset="utf-8" async="" src="0.jarsj.28a8938cd0c9195ba405.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div id="nav">
-            <ul class="navbar fl">
-                <li><a href="https://www.yatan8.com">首页</a></li>
-                <li><a title="进入找工作页面" href="/job.html">找工作</a></li>
-            </ul>
-            <ul class="navbar fr">
-                <li><a href="/account/user">我的账号</a></li>
-                <li><a href="/account/logout">退出</a></li>
-            </ul>
-            <div class="clear"></div>
-        </div><!-- /.navbar-collapse -->
+---
+layout: crazepony-cn
+title: crazepony
+---
 
-        <!--<div class="sidebar">
-            <div class="oi">
-                <ul class="navbar-v">
-                    <li class="youarehere">
-                        <a href="/kaoshi/bm/menu">报名</a>
-                    </li>
-                    <li>
-                        <a href="/kaoshi/dybmb/menu">打印报名表</a>
-                    </li>
 
-                </ul>
+
+
+<div class="container carousel-container">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+	  <div class="carouselContainer">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/img/micro-fpv-slide-1.jpg" alt="Components" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Crazepony MICRO FPV穿越机</h1>
+              <p>将国外最火的室内穿越TINY WHOOP带入中国的第一机。</p>
+              <p>
+                <a class="btn btn-large btn-primary" href="/products/micro-fpv-cn.html">了解更多</a>
+                <a class="btn btn-large btn-danger" href="http://shop111225004.taobao.com/" target="_blank">淘宝购买</a>
+              </p>
             </div>
-        </div>-->
-
-        <div class="caption">Yatan8官方招聘</div>
-        <div class="clear"></div>
-        <div class="oi">
-            <form id="id-qiniu-form" role="form" method="post">
-                <table class="detail-table">
-                    <tbody>
-                        <tr>
-                            <td class="label"><div>姓名</div></td>
-                            <td class="value"><div class="value"><input id="id_xm" maxlength="10" name="xm" type="text"></div></td>
-                            <td class="label"><div>性别</div></td>
-                            <td class="value">
-                                <div class="value">
-                                    <select name="sex" id="id_sex">
-                                        <option value="">---------</option>
-                                        <option value="男">男</option>
-                                        <option value="女">女</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="label"><div>民族</div></td>
-                            <td class="value"><div class="value" style="width: 159px;"><input id="id_mz" maxlength="5" name="mz" type="text"></div></td>
-                            <td class="info" rowspan="5">
-                                <div class="tx">
-                                    <input type="hidden" name="tx" id="id_tx">
-                                    <img class="qiniu_dynamic" src="">
-                                    <input type="file" name="qiniu-avatar" id="qiniu-avatar" style="display: none;">
-                                    <div class="button qiniu-fake-upload">上传头像</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>出生年月</div></td>
-                            <td class="value"><div class="value"> <input id="id_csny" name="csny" type="text"></div></td>
-                            <td class="label"><div>政治面貌</div></td>
-                            <td class="value">
-                                <div class="value">
-                                    <select name="zzmm" id="id_zzmm">
-                                        <option value="">---------</option>
-                                        <option value="群众">群众</option>
-                                        <option value="共青团员">共青团员</option>
-                                        <option value="中共党员">中共党员</option>
-                                        <option value="中共预备党员">中共预备党员</option>
-                                        <option value="无党派民主人士">无党派民主人士</option>
-                                        <option value="民革党员">民革党员</option>
-                                        <option value="民盟盟员">民盟盟员</option>
-                                        <option value="民建会员">民建会员</option>
-                                        <option value="民进会员">民进会员</option>
-                                        <option value="农工党党员">农工党党员</option>
-                                        <option value="致公党党员">致公党党员</option>
-                                        <option value="九三学社社员">九三学社社员</option>
-                                        <option value="台盟盟员">台盟盟员</option>
-                                        <option value="其他">其他</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="label"><div>婚姻状态</div></td>
-                            <td class="value">
-                                <div class="value" style="width: 159px;">
-                                    <select name="hyzt" id="id_hyzt">
-                                        <option value="">---------</option>
-                                        <option value="未婚">未婚</option>
-                                        <option value="已婚">已婚</option>
-                                        <option value="离异">离异</option>
-                                        <option value="丧偶">丧偶</option>
-                                    </select>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>学历类别</div></td>
-                            <td class="value">
-                                <div class="value">
-                                    <select name="xllb" id="id_xllb">
-                                        <option value="">---------</option>
-                                        <option value="全日制">全日制</option>
-                                        <option value="非全日制">非全日制</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="label"><div>学历</div></td>
-                            <td class="value">
-                                <div class="value">
-                                    <select name="xl" id="id_xl">
-                                        <option value="">---------</option>
-                                        <option value="大专">大专</option>
-                                        <option value="中专">中专</option>
-                                        <option value="中技">中技</option>
-                                        <option value="本科">本科</option>
-                                        <option value="硕士研究生">硕士研究生</option>
-                                        <option value="博士研究生">博士研究生</option>
-                                        <option value="高中">高中</option>
-                                        <option value="初中">初中</option>
-                                        <option value="其他">其他</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="label"><div>学位</div></td>
-                            <td class="value">
-                                <div class="value" style="width: 159px;">
-                                    <select name="xw" id="id_xw">
-                                        <option value="" selected="selected">---------</option>
-                                        <option value="学士">学士</option>
-                                        <option value="硕士">硕士</option>
-                                        <option value="博士">博士</option>
-                                    </select>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>毕业时间</div></td>
-                            <td class="value"><div class="value"><input type="text" name="bysj" id="id_bysj"></div></td>
-                            <td class="label"><div>毕业院校</div></td>
-                            <td class="value"><div class="value"><input id="id_byyx" maxlength="50" name="byyx" type="text"></div></td>
-                            <td class="label"><div>专业</div></td>
-                            <td class="value"><div><input id="id_zy" maxlength="50" name="zy" type="text"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>联系电话</div></td>
-                            <td class="value"><div class="value"><input id="id_phone" maxlength="11" name="phone" type="text"></div></td>
-                            <td class="label"><div>电子邮箱</div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input id="id_dzyx" maxlength="50" name="dzyx" type="text"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>考生身份</div></td>
-                            <td class="value" colspan="2">
-                                <div class="value" style="width: 203px;">
-                                    <select name="kssf" id="id_kssf">
-                                        <option value="其他">其他</option>
-                                        <option value="公务员">公务员</option>
-                                        <option value="参公人员">参公人员</option>
-                                        <option value="事业编制人员">事业编制人员</option>
-                                        <option value="应届毕业生">应届毕业生</option>
-                                        <option value="待业">待业</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="label"><div>报考岗位</div></td>
-                            <td class="value" colspan="3">
-                                <div class="value" style="width: 357px;">
-                                    <select name="bkgw" id="id_bkgw">
-                                        <option value="总经理">总经理</option>
-                                        <option value="董事长">董事长</option>
-                                        <option value="财务经理">财务经理</option>
-                                        <option value="软件工程师">软件工程师</option>
-                                        <option value="人事经理">人事经理</option>
-                                    </select>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>参加工作时间</div></td>
-                            <td class="value" colspan="2"><div><input type="text" name="cjgzsj" id="id_cjgzsj"></div></td>
-                            <td class="label"><div>现工作单位及岗位</div></td>
-                            <td class="value" colspan="3"><div><input id="id_xgzdwjgw" maxlength="50" name="xgzdwjgw" type="text"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="label"><div>户籍信息</div></td>
-                            <td class="value" colspan="6"><div><input id="id_hjszd" maxlength="50" name="hjszd" type="text"></div></td>
-
-                        </tr>
-
-
-                        <tr>
-                            <td class="label"><div>家庭住址</div></td>
-                            <td class="value" colspan="6"><div><input id="id_jtzz" maxlength="50" name="jtzz" type="text"></div></td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td class="label"><div>证书职称<br>信息</div></td>
-                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="300" name="zszcxx" id="id_zszcxx"></textarea></div></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label" rowspan="7">
-                                <div id="id_grjl">
-
-                                    个人简历
-                                    <div class="add_row button">增加</div>
-                                </div>
-                            </td>
-                            <td class="label"><div>开始年月</div></td>
-                            <td class="label"><div>结束年月</div></td>
-                            <td class="label" colspan="4"><div>详情</div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_1"></div></td>
-                            <td class="value"><div class="value"><input maxlength="9" type="text" value="1900-01" name="grjl_1" id="id_grjl_1_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_1" id="id_grjl_1_3"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_2" id="id_grjl_2_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_2" id="id_grjl_2_3"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_3" id="id_grjl_3_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_3" id="id_grjl_3_3"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_4" id="id_grjl_4_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_4" id="id_grjl_4_3"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_5" id="id_grjl_5_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_5" id="id_grjl_5_3"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="grjl_6" id="id_grjl_6_2"></div></td>
-                            <td class="value" colspan="4"><div class="value" style="width: 459px;"><input type="text" maxlength="100" name="grjl_6" id="id_grjl_6_3"></div></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label" rowspan="9">
-                                <div id="id_jtzycyqk">
-                                    家庭主要<br>成员情况<div class="add_row button">增加</div>
-                                </div>
-                            </td>
-                            <td class="label"><div>姓名</div></td>
-                            <td class="label"><div>称谓</div></td>
-                            <td class="label"><div>年龄</div></td>
-                            <td class="label" colspan="2"><div>工作单位</div></td>
-                            <td class="label"><div>职务</div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_1" id="id_jtzycyqk_1_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_1" id="id_jtzycyqk_1_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_1_3" type="number" min="1" name="jtzycyqk_1"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_1" id="id_jtzycyqk_1_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_1" id="id_jtzycyqk_1_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_2" id="id_jtzycyqk_2_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_2" id="id_jtzycyqk_2_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_2_3" type="number" min="1" name="jtzycyqk_2"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_2" id="id_jtzycyqk_2_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_2" id="id_jtzycyqk_2_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_3" id="id_jtzycyqk_3_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_3" id="id_jtzycyqk_3_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_3_3" type="number" min="1" name="jtzycyqk_3"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_3" id="id_jtzycyqk_3_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_3" id="id_jtzycyqk_3_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_4" id="id_jtzycyqk_4_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_4" id="id_jtzycyqk_4_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_4_3" type="number" min="1" name="jtzycyqk_4"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_4" id="id_jtzycyqk_4_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_4" id="id_jtzycyqk_4_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_5" id="id_jtzycyqk_5_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_5" id="id_jtzycyqk_5_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_5_3" type="number" min="1" name="jtzycyqk_5"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_5" id="id_jtzycyqk_5_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_5" id="id_jtzycyqk_5_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_6" id="id_jtzycyqk_6_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_6" id="id_jtzycyqk_6_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_6_3" type="number" min="1" name="jtzycyqk_6"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_6" id="id_jtzycyqk_6_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_6" id="id_jtzycyqk_6_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_7" id="id_jtzycyqk_7_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_7" id="id_jtzycyqk_7_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_7_3" type="number" min="1" name="jtzycyqk_7"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_7" id="id_jtzycyqk_7_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_7" id="id_jtzycyqk_7_5"></div></td>
-                        </tr>
-                        <tr>
-                            <td class="value"><div class="value"><input type="text" maxlength="9" name="jtzycyqk_8" id="id_jtzycyqk_8_1"></div></td>
-                            <td class="value"><div class="value"><input type="text" maxlength="6" name="jtzycyqk_8" id="id_jtzycyqk_8_2"></div></td>
-                            <td class="value"><div class="value"><input max="100" id="id_jtzycyqk_8_3" type="number" min="1" name="jtzycyqk_8"></div></td>
-                            <td class="value" colspan="2"><div class="value" style="width: 246px;"><input type="text" maxlength="60" name="jtzycyqk_8" id="id_jtzycyqk_8_4"></div></td>
-                            <td class="value"><div class="value" style="width: 110px;"><input type="text" maxlength="10" name="jtzycyqk_8" id="id_jtzycyqk_8_5"></div></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label"><div>奖惩情况</div></td>
-                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="jcqk" id="id_jcqk"></textarea></div></td>
-                        </tr>
-
-                        <tr>
-                            <td class="label"><div>备注</div></td>
-                            <td class="value" colspan="6"><div><textarea cols="40" rows="10" maxlength="500" name="bz" id="id_bz"></textarea></div></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <button type="submit" style="display:block;width:8em">提交</button>
-            </form>
+          </div>
         </div>
-
-        <div class="clear"></div>
-        <div class="footer">
-            网站备案号：蜀ICP备13027888号-1
+        <div class="item">
+          <img src="/assets/img/crazepony-slide-1920.png" alt="Components" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Crazepony MINI四轴飞行器</h1>
+              <p>繁星若尘，带来娱乐性/开发性最强的开源空中机器人——微型四轴飞行器。</p>
+              <p>
+                <a class="btn btn-large btn-primary" href="/products/mini-cn.html">了解更多</a>
+                <a class="btn btn-large btn-danger" href="http://shop111225004.taobao.com/" target="_blank">淘宝购买</a>
+              </p>
+              <p class="version">最新版本 CrazePony 5.2 &nbsp;&nbsp; <a href="history.html">版本历史</a></p>
+            </div>
+          </div>
         </div>
+        <div class="item">
+          <img src="/assets/img/race-drone.jpg" alt="Components" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>第一视角（FPV）竞速穿越机</h1>
+			  <p>最流行最酷炫的无人机大战比赛。带上你的眼睛，像飞鸟一样穿梭在大自然中。</p>
+              <p>
+                <a class="btn btn-large btn-primary" href="h250.html">了解更多</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/img/makerfire-f01.png" alt="Components" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Makerfire F01竞速无人机</h1>
+              <p>模块化设计，开箱入手即飞，让新手也能够很快的上手FPV竞速的无人机。</p>
+              <p><a class="btn btn-large btn-primary" href="http://www.makerfire.com"  target="_blank">了解更多</a></p>
+         </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	  </div>
+    </div><!-- /.carousel -->
+</div><!-- /.container -->
+
+<div class="small-bs-docs-featurette">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <p><a class="btn btn-outline"  data-toggle="collapse" data-parent="#accordion" href="#collapse-share" aria-expanded="true" aria-controls="collapse-share">
+    分享优惠</a>
+         &nbsp;&nbsp;点击分享优惠，购买立减60
+         &nbsp;&nbsp;<a class="btn btn-large btn-danger" href="http://shop111225004.taobao.com/" target="_blank">淘宝购买</a>
+         </p>
+      </div>
     </div>
 
 
-    <script type="text/javascript" src="http://mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="jarsj.28a8938cd0c9195ba405.js"></script>
+    <div id="collapse-share" class="row panel-collapse collapse">
+      <hr class="half-rule">
+      <div class="col-sm-6">
+        <p>微信扫描下面二维码，分享朋友圈，截图联系客服立减20!</p>
+        <img src="assets/img/qr-2.png" alt="Components" class="img-responsive">
+      </div>
+
+      <div class="col-sm-6">
+        <p>任选以下一篇博客，分享人人网、校园/航模/技术论坛、博客等，再减40！！</p>
+        <ul  class="list-unstyled">
+          <li><a href="./2015/11/30/about-crazepony.html" target="_blank">Crazepony开源四轴飞行器</a>（推荐）</li>
+          <li><a href="./2014/05/29/story-with-crazepony-2.html" target="_blank">我和Crazepony的那点事儿</a></li>
+          <li><a href="./2015/01/23/about-5-1-version.html" target="_blank">Crazepony鞭状天线室外飞行记</a></li>
+          <li><a href="./2014/09/19/crazepony-computer-vision.html" target="_blank">CrazePony与计算机视觉</a></li>
+          <li><a href="./wiki/motor-aircraft-model.html" target="_blank">航模电机</a></li>
+          <li><a href="./wiki/motor-control-ic.html" target="_blank">航模电机驱动控制</a></li>
+          <li><a href="./wiki/softmain.html" target="_blank">Crazepony软件框架讲解</a></li>
+          <li><a href="./wiki/auto-hold.html" target="_blank">自主悬停&高度融合</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
-    <script>
-  $(document).ready(function(){
-      //打印区域
-  })
-    </script>
-    //<div class="_bd_ext_tip _bd_ext_search_mode" style="visibility: hidden; left: 758px; top: 1160px;"><span class="_bd_ext_search">百度一下</span><span class="_bd_ext_open">打开链接</span><span class="_bd_ext_copy">复制</span></div>
-</body>
-</html>
+<!-- Page content of course! -->
+
+<div class="bs-docs-featurette" id="intro">
+  <div class="container">
+
+    <h2 class="bs-docs-featurette-title">Crazepony， 一个对抗地心引力的梦。</h2>
+    <p class="lead">Crazepony起源于孩子对飞行的梦想，承载着一群大学生对科技的热爱和追求。我们一起开发了Crazepony系列飞行器，并且将之开源，形成了飞行器爱好者社区。</p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="/products/micro-fpv-cn.html">
+            <img src="assets/img/micro-fpv-tab-1.jpg" alt="Components" class="img-responsive">
+        </a>
+        <h3>90MM MICRO FPV穿越机</h3>
+        <p>你是否在为第一视角（FPV）穿越而惊叹不已，跃跃欲试。但是它复杂的组装，不菲的价格和较难的操控及危险性确让你犹豫不决。那么，室内穿越是你最好的选择。</p>
+      </div>
+      <div class="col-sm-4">
+        <a href="/products/mini-cn.html">
+            <img src="assets/img/mini-drone-tab.jpg" alt="Components" class="img-responsive">
+        </a>
+        <h3>MINI四轴开发平台</h3>
+        <p>Crazepony MINI四轴飞行器设计精美，功能完备，并且是开源的，提供详尽开发文档/笔记，你可以制作属于自己的Crazepony四轴飞行器。也可以通过我们提供的平台进行学习研究，二次开发。</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/img/tiny-whoop.jpg" alt="Components" class="img-responsive">
+        <h3>毕设/竞赛/就业好帮手</h3>
+        <p>无人机飞行器是大学生毕设/竞赛/就业中提高逼格的好帮手。Crazepony帮助小伙伴获得了学校创新基金申请，还为多个小伙伴进入<a href="http://www.dji.com" target="_blank">DJI</a>等公司立下了赫赫战功。</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="bs-docs-featurette" id="about-us">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Crazepony精彩欣赏</h2>
+    <p class="lead">很多朋友参与到Crazepony的外形设计，飞行体验，网站设计，视频/图片拍摄中。这里将其中的一部分精彩分享给大家。</p>
+
+    <hr class="half-rule">
+    <div class="row featurette">
+
+        <div class="col-md-8">
+            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XODg4MjY5OTg0/v.swf">
+                <img src="/assets/img/video-poster-1.jpg" alt="Crazepony 4.1版本视频" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XNzYzNDg5NjA4/v.swf">
+                <img src="/assets/img/video-poster-2.jpg" alt="CrazePOV项目讲解" class="img-responsive">
+            </a>
+
+            <hr>
+
+            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XNzU3MzQ4NzMy/v.swf">
+                <img src="/assets/img/video-poster-3.jpg" alt="飞行时倩影" class="img-responsive">
+            </a>
+        </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <!-- Micro FPV第一行图片 -->
+    <div class="row">
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-19.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-19.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-13.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-13.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="/assets/img/micro-fpv-show-12.jpg" title="" class="fancybox" rel="group">
+            <img src="/assets/img/micro-fpv-show-12.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-15.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-15.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Micro FPV第二行图片 -->
+    <div class="row">
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-14.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-14.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-17.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-17.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="/assets/img/micro-fpv-show-6.jpg" title="" class="fancybox" rel="group">
+        <img src="/assets/img/micro-fpv-show-6.jpg" alt="" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="/assets/img/micro-fpv-show-7.jpg" title="" class="fancybox" rel="group">
+            <img src="/assets/img/micro-fpv-show-7.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 第一行图片 -->
+    <div class="row">
+      <div class="col-sm-3">
+    <a href="/assets/img/5-6.jpg" title="蝙蝠侠遥控器" class="fancybox" rel="group">
+        <img src="/assets/img/5-6.jpg" alt="蝙蝠侠遥控器" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="/assets/img/5-10.jpg" title="平衡调试中" class="fancybox" rel="group">
+        <img src="/assets/img/5-10.jpg" alt="平衡调试中" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2zpX.aXXXXXbjXXXXXXXXXXXX-532197584.jpg" title="再来一张" class="fancybox" rel="group">
+        <img src="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2zpX.aXXXXXbjXXXXXXXXXXXX-532197584.jpg" alt="再来一张" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2TRl4aXXXXXXIXpXXXXXXXXXX_!!532197584.jpg" title="蝙蝠侠遥控器" class="fancybox" rel="group">
+        <img src="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2TRl4aXXXXXXIXpXXXXXXXXXX_!!532197584.jpg" alt="蝙蝠侠遥控器" class="img-responsive">
+    </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <a class="btn btn-outline"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    More Pictures
+        </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 第三行图片 处于折叠状态-->
+
+    <div class="row">
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="col-sm-3">
+        <a href="http://img04.taobaocdn.com/imgextra/i4/532197584/TB2EuT1aXXXXXXOXXXXXXXXXXXX_!!532197584.jpg" title="飞行时倩影" class="fancybox" rel="group">
+            <img src="http://img04.taobaocdn.com/imgextra/i4/532197584/TB2EuT1aXXXXXXOXXXXXXXXXXXX_!!532197584.jpg" alt="飞行时倩影" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2iQTWaXXXXXbQXXXXXXXXXXXX_!!532197584.jpg" title="包装图" class="fancybox" rel="group">
+        <img src="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2iQTWaXXXXXbQXXXXXXXXXXXX_!!532197584.jpg" alt="包装图" class="img-responsive">
+    </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2amzWaXXXXXXAXXXXXXXXXXXX_!!532197584.jpg" title="再来一张" class="fancybox" rel="group">
+            <img src="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2amzWaXXXXXXAXXXXXXXXXXXX_!!532197584.jpg" alt="再来一张" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-sm-3">
+    <a href="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2Dx_YaXXXXXXZXXXXXXXXXXXX_!!532197584.jpg" title="正在调试中" class="fancybox" rel="group">
+        <img src="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2Dx_YaXXXXXXZXXXXXXXXXXXX_!!532197584.jpg" alt="正在调试中" class="img-responsive">
+    </a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="bs-docs-featurette" id="about-us">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">我们的故事</h2>
+    <p class="lead">我们的团队由一群充满梦想的创客/开源硬件爱好者组成。热衷于将创意和技术结合起来，追求纯粹，追求卓越。关于我们更多的故事，到<a href="./blog.html">Crazepony博客</a>看看。</p>
+    <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@crazepony.com</p>
+    <p><i class="fa fa-qq"></i>&nbsp;&nbsp;487319060（二号群）346226561（2千人群，已满）</p>
+
+    <hr class="half-rule">
+    <div class="row featurette">
+        <div class="col-md-6">
+            <img src="assets/img/index-2.jpg" alt="Responsive across devices" class="img-responsive">
+            <h3>创客/开源硬件</h3>
+            <p>我们是Maker，借由我们的力量、思想和精神，我们收集、塑造、成形。</p>
+        </div>
+        <div class="col-md-6">
+            <img src="assets/img/index-4.jpg" alt="Responsive across devices" class="img-responsive">
+            <h3>梦想家/筑梦者</h3>
+            <p>一点天真，一点梦想，一点追求，我们是和自己赛跑的人。</p>
+        </div>
+    </div>
+  </div> 
+</div>

@@ -1,0 +1,87 @@
+---
+layout: crazepony
+title: faq
+---
+
+<div class="bs-docs-featurette">
+    <div class="container text-left">
+    <h2><i class="fa fa-arrow-right"></i>Specifications of the Crazepony MINI Quadcopter.</h2>
+        <div class="row">
+            <p>Small size of 100mm * 100mm,wheelbase of 140mm,75mm propeller,really ultra-compact palm sized quadcopter.</p>
+            <p>Light weight,about 46g in total,battery included.</p>
+            <p>Flight time up to 6 minutes with standard 650mAh Li-Po rechargeable battery.</p>
+            <p>Standard Micro USB connector for charging witch takes about 40min for the stock 650mAh battery with 2A adapter.</p>
+            <p>On-board low-energy radio based on the nRF24L01+ chip. </p>
+            <p>Powerful 32 bit MCU: STM32F103T8U6 @ 72 MHz (64Kbs flash, 20kb RAM).</p>
+            <p>3-axis high-performance MEMs gyros with 3-axis accelerometer: Invensense MPU-6050.</p>
+            <p>High precision altimeter MS5611-01BA03.</p>
+            <p>Extended reservation position for compass HMC5883L.</p>
+            <p>With common USB to UART bridge CP2102,micro USB connector for firmware download and debug.</p>
+            <p>Bluetooth 4.0 LE wireless connection (with TI CC2541 chip) for smartphone client control.</p>
+            <p>4-layer low noise PCB design with separate voltage regulators for digital and analog supply.</p>
+        </div>
+
+    <h2><i class="fa fa-arrow-right"></i>Specifications of the Crazepony MINI RC Transmitter.</h2>
+        <div class="row">
+            <p>Powerful 32 bit MCU: STM32F103T8U6 @ 72 MHz (64Kbs flash, 20kb RAM).</p>
+            <p>Pluggable nRF24L01+ dongle for 20m range,up to 100m with power amplifier(PA) and SMA antenna.</p>
+            <p>With common USB to UART bridge CP2102,micro USB connector for firmware download and debug.</p>
+            <p>The default mode is the throttle on the left joystick.The left throttle joystick self centres in  the up/down axis and have a excellent operation experience in altitude hold mode. </p>
+            
+        </div>
+        <h2><i class="fa fa-arrow-right"></i>What I can use the quadcopter for?</h2>
+        <div class="row">
+            <p>The Crazepony MINI Quadcopter can of course be flown just because it’s fun, but the main usage is as a development, teaching or experimentation platform. </p>
+        </div>
+
+        <h2><i class="fa fa-arrow-right"></i>Is this quadcopter ready to fly?</h2>
+        <div class="row">
+            <p>Yes,it is full assembled and tested before send to you.You could control it by 4 simple steps and enjoy the fun of flying.</p>
+        </div>
+
+        <h2><i class="fa fa-arrow-right"></i>how to hook up the power antenna and SMA to extend RF to 100m?</h2>
+        <div class="row">
+            <p>This kind of nRF24L01 SMA Antenna Wireless Transceiver is available for Crazepony RC on <a href="http://www.amazon.com/dp/B00OIQ8FS6" target="_blank">Amazon</a>.No new firmware is needed.Just plug out the old one and replace the tranceiver with PA.</p>
+          <img src="/assets/img/rm-ctrl-8.png" alt="Components" class="img-responsive">
+        </div>
+
+        <h2><i class="fa fa-arrow-right"></i>Crazepony propeller got damaged and what replacements are available?</h2>
+        <div class="row">
+            <p>The stock propellers of Crazepony MINI quadcopter is 75mm nylon propeller.This is available on e-platform like <a href="https://www.amazon.com/dp/B01ASQFP28" target="_blank">Amazon</a>.Also you to use the propeller of Parrot Minidrone Rolling Spider instead.The <a href="http://www.amazon.com/dp/B00R2PA0OM" target="_blank">propellers</a> of Parrot Rolling Spider are 66mm and work well on Crazepony.You could just replace all the props with Rolling Spider props and no upgrade firmware needed.</p>
+        </div>
+
+        <h2><i class="fa fa-arrow-right"></i>How to flash a modified firmware to the quadcopter or remote control?</h2>
+        <div class="row">
+        <p>Using the FlyMcu.exe tool on Windows System.</p>
+            <ul>
+            <li>Connect quad to usb.You need a Micro USB data cable,like the one for Android smartphone.</li>
+            <li><a href="https://drive.google.com/open?id=0B9cAzTdwG1EaT0NLZ2xxY3cxZUk" target="_blank">Download</a> and launch FlyMcu.exe.</li>
+            <li>Click "EnumPort" menu item then select the COM port the quad is attached to(Make sure you have installed the CP210x driver correctlly).</li>
+            <li>Go to STM ISP tab.</li>
+            <li>Click "..." then select the .hex file you want to flash to the quad.</li>
+            <li>In the dropdown on the bottom of the window, select "Reset @RTS High(>+3V),ISP @DTR High</li>
+            <li>Uncheck "Program OptionBytes when ISP" (not mandatory, but safer, we don't need to touch that ...)</li>
+            <li>Click "Start ISP"</li>
+            <li>It should flash the firmware to the quad...</li>
+            </ul>
+            <img src="/assets/img/ispmcu.png" alt="Components" class="img-responsive">
+        </div>
+
+        <div class="page_disqus" id="disqus_container">
+            <div id="disqus_thread"></div>
+            <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//crazepony.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>   </div>
+        </div>
+
+    </div>
+</div>
+

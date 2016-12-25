@@ -1,0 +1,201 @@
+---
+layout: crazepony
+title: user manual
+---
+
+<div class="bs-docs-featurette" id="feature">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Specifications</h2> 
+    <p class="lead">Crazepony is a open source mini quadcopter 9-DOF for flying,development,teaching or experimentation.</p>
+
+    <hr class="half-rule">
+
+    <div class="row bs-docs-featured-sites">
+    
+      <div class="col-sm-2">
+        <div class="thumbnail">
+            <p><i class="fa fa-cogs fa-2x"></i></p>
+            <p>Powerful 32 bit MCU STM32F103T8U6 72MHz 64Kbs flash</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-random fa-2x"></i></p>
+            <p>Bluetooth 4.0 LE connection with smart phone</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-exchange fa-2x"></i></p>
+            <p>On-board low energy 2.4G chip nRF24L01+</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-power-off fa-2x"></i></p>
+            <p>650mAh Li-Po battery up to 6 minutes flight time</p>
+        </div>
+      </div>
+    
+      <div class="col-sm-8">
+        <img src="/assets/img/hand.png" alt="Responsive across devices" class="img-responsive">
+      </div>
+
+      <div class="col-sm-2">
+        <div class="thumbnail">
+            <p><i class="fa fa-joomla fa-2x"></i></p>
+            <p>Around 46g and about 142mm motor to motor</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-cubes fa-2x"></i></p>
+            <p>3-axis MEMs gyros with 3-axis accelerometer: Invensense MPU-6050</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-send fa-2x"></i></p>
+            <p>High precision altimeter MS5611-01BA03</p>
+        </div>
+
+        <div class="thumbnail">
+            <p><i class="fa fa-windows fa-2x"></i></p>
+            <p><a href="ponyflight.html" >Cleanflight</a> flight control supported</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <p><i class="fa fa-battery fa-2x"></i></p>
+    <p><i class="fa fa-github fa-2x"></i></p>
+    <p class="lead">Crazepony is open source. It's hosted, developed, and maintained on GitHub.</p>
+    <a href="https://github.com/Crazepony" class="btn btn-outline btn-lg" target="_blank">View the Github Project</a>
+    
+
+  </div>
+</div>
+
+<div class="bs-docs-featurette" id="intro">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">RC Transmitter User Guide</h2>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/assets/img/manual-1-0.png" alt="Components" class="img-responsive img-manual">
+        <p>1.Place the Crazepony on a stable ground.The Arrow on the center of the PCB indicate the front.</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="/assets/img/manual-2-0.png" alt="Components" class="img-responsive img-manual">
+        <p>2.Firstly switch on the Crazepony RC, then quadcopter.About 10s later, blue LEDs on M1/M2 flashing,IMU is calibrated.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/assets/img/manual-3-0.png" alt="Components" class="img-responsive img-manual">
+        <p>3.Press the "-" button on RC to start IMU calibration.Press the "+" button on RC to start the motors.</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="/assets/img/manual-4-0-en.jpg" alt="Components" class="img-responsive img-manual">
+        <p>4.Push the throttle on the left joystick to take off.Press the "+" button again to stop motors after landing.</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="bs-docs-featurette" id="intro">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Android Client User Guide</h2>
+    <p class="lead">Control by smart phone through the newest Bluetooth 4.0 LE wireless connection.</p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="text-left">There is now an offical version in the <a href="https://play.google.com/store/apps/details?id=com.test.Crazepony" target="_blank">Google Play Store</a>,Scan the QR code right to install it.</p>
+        <p class="text-left">Click the 'Connect' button to search and connect the Crazepony MINI quadcopter.The flashing LED next to BLE module will be solid blue when connected.</p>
+        <p class="text-left">Click the 'Unarm' button to start the motors and click again to stop them after landing.</p>
+        <p class="text-left">'Headfree' button for head free mode,'Altihold' button for altitude hold mode and 'IMUCali' button for IMU calibration.</p>
+        <p class="text-left">iOS client is coming soon...</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="/assets/img/google-play-store-qr.png" alt="Components" class="img-responsive img-manual">
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="bs-docs-featurette" id="about-us">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">LED Flight Indicator</h2>
+    <p class="lead">Crazepony has 4 blue LEDs mounted on each arms M1/M2/M3/M4.The LEDs indicate the status and operation.</p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+        <div class="col-sm-8">
+
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Indicator</th>
+                  <th>Warning</th>
+                  <th>Solution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>M1/M2/M3/M4 Flash Rorating</td>
+                    <td>Remote Control Signal Lost</td>
+                    <td>Power the RC or Android APP</td>
+                </tr>
+                <tr>
+                    <td>M1/M2 and M3/M4 Flash Alternatively</td>
+                    <td>IMU Error</td>
+                    <td>Press the "-" Button on RC</td>
+                </tr>
+                <tr>
+                    <td>M1/M2/M3/M4 Flashing</td>
+                    <td>Low Battery Warning</td>
+                    <td>Connect the USB to Charge</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-4">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Indicator</th>
+                  <th>Normal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>M1/M2 Flashing</td>
+                    <td>Ready to Fly</td>
+                </tr>
+                <tr>
+                    <td>M1/M2 Solid Blue</td>
+                    <td>IMU Calibrating</td>
+                </tr>
+                <tr>
+                    <td>M1 Flashing</td>
+                    <td>Config the BT Module</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <div class="row">
+        <h3 class="text-left">Tips:</h3>
+        <p class="text-left">Set the switch to CHG side for charge.The red LED blind down means charge is over.</p>
+    </div>
+
+  </div>
+</div>
